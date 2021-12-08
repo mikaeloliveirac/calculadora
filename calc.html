@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+
+<body>
+    <div id="titulo"><h1>Calculadora</h1>
+
+    </div>
+    <div id="box">
+        <div id="res">
+
+        </div>
+        <table>
+            <tr>
+                <td><button class="botao" onclick="limpa()">C</button></td>
+                <td><button class="botao" onclick="volta()">></button></td>
+                <td><button class="botao" onclick="calc('/')">/</button></td>
+                <td><button class="botao" onclick="calc('*')">X</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="calc(7)">7</button></td>
+                <td><button class="botao" onclick="calc(8)">8</button></td>
+                <td><button class="botao" onclick="calc(9)">9</button></td>
+                <td><button class="botao" onclick="calc('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="calc(4)">4</button></td>
+                <td><button class="botao" onclick="calc(5)">5</button></td>
+                <td><button class="botao" onclick="calc(6)">6</button></td>
+                <td><button class="botao" onclick="calc('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="calc(1)">1</button></td>
+                <td><button class="botao" onclick="calc(2)">2</button></td>
+                <td><button class="botao" onclick="calc(3)">3</button></td>
+                <td rowspan="2"><button id="igual" class="botao" onclick="igual('=')">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" onclick="calc(0)"><button class="botao" id="zero">0</button></td>
+                <td><button class="botao" onclick="calc('.')">.</button></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <script src="calc.js"></script>
+</body>
+
+</html>
